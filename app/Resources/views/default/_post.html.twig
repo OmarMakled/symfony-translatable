@@ -1,0 +1,28 @@
+<div class="box">
+    <a href="/{{locale}}/show/{{post.id}}">#{{ post.id }}</a>
+    <h5>{{"title.post"|trans}}</h5>
+    <p>
+        {{ post.title }}
+        <br>
+        {{ post.description }}</p>
+    <h5>{{"title.author"|trans}}</h5>
+    <p>
+        {{post.author.firstname}}
+        <br>
+        {{post.author.lastname}}
+        <br>
+        {{post.author.address}}
+        <br>
+        {{post.author.country}}
+    </p>
+    <h5>{{"title.user"|trans}}</h5>
+    <p>
+        {{post.author.user.email}}
+    </p>
+    <h5>{{"title.category"|trans}}</h5>
+    <p>
+        {{post.category.title}}
+        <br>
+        {{post.category.description}}
+    </p>
+</div>
